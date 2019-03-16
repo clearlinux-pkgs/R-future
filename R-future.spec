@@ -4,14 +4,12 @@
 #
 Name     : R-future
 Version  : 1.12.0
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/future_1.12.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/future_1.12.0.tar.gz
 Summary  : Unified Parallel and Distributed Processing in R for Everyone
 Group    : Development/Tools
 License  : LGPL-2.1
-Requires: R-globals
-Requires: R-listenv
 BuildRequires : R-globals
 BuildRequires : R-listenv
 BuildRequires : buildreq-R
@@ -41,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552183729
+export SOURCE_DATE_EPOCH=1552770959
 
 %install
-export SOURCE_DATE_EPOCH=1552183729
+export SOURCE_DATE_EPOCH=1552770959
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -80,8 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library future|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  future || :
 
 
 %files
