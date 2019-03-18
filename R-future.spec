@@ -4,7 +4,7 @@
 #
 Name     : R-future
 Version  : 1.12.0
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/future_1.12.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/future_1.12.0.tar.gz
 Summary  : Unified Parallel and Distributed Processing in R for Everyone
@@ -39,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552770959
+export SOURCE_DATE_EPOCH=1552946844
 
 %install
-export SOURCE_DATE_EPOCH=1552770959
+export SOURCE_DATE_EPOCH=1552946844
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
