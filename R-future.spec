@@ -4,7 +4,7 @@
 #
 Name     : R-future
 Version  : 1.17.0
-Release  : 29
+Release  : 30
 URL      : https://cran.r-project.org/src/contrib/future_1.17.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/future_1.17.0.tar.gz
 Summary  : Unified Parallel and Distributed Processing in R for Everyone
@@ -37,21 +37,22 @@ unified Future API for sequential and parallel processing of R
 
 %prep
 %setup -q -c -n future
+cd %{_builddir}/future
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1587403709
+export SOURCE_DATE_EPOCH=1589567315
 
 %install
-export SOURCE_DATE_EPOCH=1587403709
+export SOURCE_DATE_EPOCH=1589567315
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
