@@ -4,7 +4,7 @@
 #
 Name     : R-future
 Version  : 1.20.1
-Release  : 35
+Release  : 36
 URL      : https://cran.r-project.org/src/contrib/future_1.20.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/future_1.20.1.tar.gz
 Summary  : Unified Parallel and Distributed Processing in R for Everyone
@@ -13,6 +13,7 @@ License  : LGPL-2.1
 Requires: R-digest
 Requires: R-globals
 Requires: R-listenv
+Requires: R-parallelly
 BuildRequires : R-digest
 BuildRequires : R-globals
 BuildRequires : R-listenv
@@ -45,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1605890185
+export SOURCE_DATE_EPOCH=1605895548
 
 %install
-export SOURCE_DATE_EPOCH=1605890185
+export SOURCE_DATE_EPOCH=1605895548
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
