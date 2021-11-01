@@ -1,4 +1,7 @@
 # This file contains recursive sources that require this package
 R-brms
 R-furrr
+R-future.apply
+R-progressr
 R-promises
+R-shiny
