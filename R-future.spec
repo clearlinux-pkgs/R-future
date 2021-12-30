@@ -4,7 +4,7 @@
 #
 Name     : R-future
 Version  : 1.23.0
-Release  : 47
+Release  : 48
 URL      : https://cran.r-project.org/src/contrib/future_1.23.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/future_1.23.0.tar.gz
 Summary  : Unified Parallel and Distributed Processing in R for Everyone
