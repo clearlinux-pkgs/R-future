@@ -2,6 +2,7 @@
 R-brms
 R-furrr
 R-future.apply
+R-pbapply
 R-progressr
 R-promises
 R-shiny
