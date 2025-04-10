@@ -1,8 +1,8 @@
 # This file contains recursive sources that require this package
+R-SimDesign
 R-brms
 R-furrr
 R-future.apply
 R-pbapply
 R-progressr
-R-promises
 R-shiny
